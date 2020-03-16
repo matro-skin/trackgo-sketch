@@ -1,5 +1,34 @@
 <%= _.template(require('./../includes/header.html').default)() %>
 
-<div class="container">2</div>
+<div class="container">
+
+	<div class="row">
+		<div class="col-md">
+
+			<div class="form-group">
+				<input type="text" class="form-control" value="E-mail..." />
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control is-valid" value="E-mail..." />
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control is-invalid" value="E-mail..." />
+			</div>
+
+			<div class="input-group input-group-sm">
+				<input type="text" class="form-control" value="https://trackgo.ru/?1234567890" readonly>
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button">
+						<i class="fas fa-link"></i>
+					</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md"></div>
+		<div class="col-md"></div>
+	</div>
+
+</div>
 
 <%= _.template(require('./../includes/footer.html').default)() %>
