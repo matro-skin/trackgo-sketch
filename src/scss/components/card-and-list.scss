@@ -5,3 +5,9 @@
         border-radius: $border-radius-sm;
     }
 }
+.jumbotron {
+    &.jumbotron-sm {
+        border-radius: 0;
+        padding: $font-size-base*2;
+    }
+}

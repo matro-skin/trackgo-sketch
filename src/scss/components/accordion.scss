@@ -8,6 +8,7 @@
 			border-radius: $border-radius-sm !important;
 		}
 		.card-header {
+            position: relative;
 			background-color: transparent;
 			border-bottom-width: 0;
 			padding: 0;
@@ -15,8 +16,35 @@
 				width: 100%;
 				text-align: left;
 				color: $dark;
+                padding: 1rem 2rem;
+                @include media-breakpoint-up(lg) {
+                    font-size: 18px;
+                    padding: 1rem 2rem;
+                }
+                .expand {
+                    @extend .ease;
+                    display: flex;
+                    align-items: center;
+                    color: $gray;
+                    position: absolute;
+                    top: 0;
+                    right: 2rem;
+                    height: 100%;
+                }
+                &[aria-expanded="true"] {
+                    .expand {
+                        transform: rotate(180deg);
+                    }
+                }
 			}
 		}
+        .card-body {
+            padding-top: 0;
+            color: $gray;
+            @include media-breakpoint-down(md) {
+                padding-bottom: 1rem;
+            }
+        }
 		& + .card {
 			margin-top: 2px;
 		}

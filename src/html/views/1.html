@@ -345,12 +345,44 @@
 </section>
 
 <section role="banner" id="section-home-faq">
-
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
 
-                <div class="text-xxl font-weight-bold text-gray mb-3">
+        <div class="text-xxl font-weight-bold text-gray mb-3 d-none d-lg-block">
+            Часто задаваемые вопросы
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-xl-3 offset-lg-1 order-lg-last">
+
+                <div class="jumbotron text-center">
+                    <img src="img/app-screen.png" alt="TrackGo" />
+                    <ul class="list-inline pt-4">
+                        <li class="list-inline-item">
+                            <div class="text-xl text-primary font-weight-bold line-height-1">+1000</div>
+                            <div class="text-sm">отзывов</div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="text-xl text-primary font-weight-bold line-height-1">4.8</div>
+                            <div class="text-sm">рейтинг</div>
+                        </li>
+                    </ul>
+                    <div class="text-sm py-3">
+                        «Приложение простое и понятное, на русском языке,
+                        все сведения о посылке на одной странице,
+                        для любопытных - можно отследить все манипуляции с посылкой».
+                    </div>
+                    <a href="#" class="google-play-badge btn btn-outline-light bg-white p-0 border-0 box-shadow-sm">
+                        <svg><use xlink:href="svg/google-play-badge-light.svg#google-play-badge-light"></use></svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 col-xl-8">
+
+
+                <div class="text-xxl font-weight-bold text-gray mb-3 d-lg-none">
                     Часто задаваемые вопросы
                 </div>
 
@@ -361,6 +393,7 @@
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordionFAQc1"
                                         aria-expanded="true" aria-controls="accordionFAQh1">
                                     Collapsible Group Item #1
+                                    <span class="expand"><i class="fas fa-angle-down"></i></span>
                                 </button>
                             </h2>
                         </div>
@@ -381,6 +414,7 @@
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordionFAQc2"
                                         aria-expanded="false" aria-controls="collapseTwo">
                                     Collapsible Group Item #2
+                                    <span class="expand"><i class="fas fa-angle-down"></i></span>
                                 </button>
                             </h2>
                         </div>
@@ -401,6 +435,7 @@
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordionFAQc3"
                                         aria-expanded="false" aria-controls="collapseThree">
                                     Collapsible Group Item #3
+                                    <span class="expand"><i class="fas fa-angle-down"></i></span>
                                 </button>
                             </h2>
                         </div>
@@ -420,7 +455,8 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordionFAQc4"
                                         aria-expanded="false" aria-controls="collapseThree">
-                                    Collapsible Group Item #3
+                                    Collapsible Group Item #4
+                                    <span class="expand"><i class="fas fa-angle-down"></i></span>
                                 </button>
                             </h2>
                         </div>
@@ -440,7 +476,8 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordionFAQc5"
                                         aria-expanded="false" aria-controls="accordionFAQc5">
-                                    Collapsible Group Item #3
+                                    Collapsible Group Item #5
+                                    <span class="expand"><i class="fas fa-angle-down"></i></span>
                                 </button>
                             </h2>
                         </div>
@@ -457,11 +494,96 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="col-lg">
+                <div class="text-gray">
+
+                    <div class="text-xxl font-weight-bold mb-3 mt-5">
+                        Отслеживание посылок - TrackGo.ru
+                    </div>
+
+                    <div class="text-lg">
+                        Популярность онлайн-шоппинга ежедневно растет, поскольку многие товары
+                        со всемирных торговых площадок: Aliexpress, eBay, TaoBao, на порядок дешевле,
+                        а порой и качественней предлагаемых в местных магазинах. В связи с этим актуальным
+                        становится вопрос отслеживания посылок и почтовых отправлений,
+                        ведь каждому хочется найти и отследить посылку по трек номеру узнать,
+                        где посылка, и когда же придет груз. Попробуем разобраться, как это сделать наиболее удобно.
+                    </div>
+
+                    <div class="text-xl font-weight-bold mt-4">Для чего нужны идентификаторы?</div>
+                    <div class="text-md">Идентификатор - трек номер,  или попросто трек, - это буквенно-цифровой код, по которому отслеживается посылки от момента регистрации в почтовом отделении отправителя до конечного пункта доставки. </div>
+                    <div class="text-lg my-3">LO265976594CN - пример</div>
+                    <ul class="list-unstyled">
+                        <li>2 латинских букв (указывают тип отправления: мелкий/большой пакет, бандероль, пр.);</li>
+                        <li>9 цифр (уникальная кодовая комбинация);</li>
+                        <li>2 латинских букв (указывают страну-отправителя. К примеру, CN – Китай, GB – Великобритания, US – США, BY – Белоруссия, KZ - Казахстан PL – Польша, IT – Италия и т. д.).</li>
+                    </ul>
+                    <div class="jumbotron jumbotron-sm text-lg">
+                        Трек-номер выдается отправителю при регистрации посылки.
+                        Далее он сообщает его будущему получателю. С этого момента
+                        и можно проверять перемещение почтового отправления.
+                    </div>
+
+                    <div class="text-xl font-weight-bold mt-4">Как отследить трек и узнать где посылка?</div>
+                    <div class="mb-3">С помощью сервиса отслеживания посылок TrackGo.ru вы можете отследить международную посылку.</div>
+                    <div class="jumbotron jumbotron-sm text-lg">
+                        <ul class="list-unstyled mb-0">
+                            <li class="font-weight-bold">Для этого достаточно:</li>
+                            <li>ввести трек-номер в соответствующую строку;</li>
+                            <li>нажать кнопку «отследить»;</li>
+                            <li>подождать буквально несколько секунд, пока система обработает ваш запрос.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        В удобной форме будет предоставлена информация о полном пути следования посылки
+                        (через пункт приема, сортировочные центры, к месту выдачи). Это одно из главных
+                        преимуществ нашего сервиса, в отличие от сайтов национальных почтовых операторов,
+                        где данные о бандероли указывается только в период, пока она находится в этой стране.
+                    </div>
+
+                    <div class="mb-3">
+                        Все это доступно бесплатно каждому не зарегистрированному пользователю.
+                        Если же вы хотите воспользоваться расширенными возможностями, рекомендуем
+                        зарегистрироваться на сервисе TrackGo.ru. Это не займет много времени,
+                        зато в дальнейшем пользоваться им будет гораздо удобнее, особенно если вам
+                        часто приходят отправления из-за рубежа или в пределах страны.
+                    </div>
+
+                    <div class="text-xl font-weight-bold mt-4">Как узнать кто перевозчик по треку?</div>
+                    <div class="mb-3">
+                        Если у клиента возникает вопрос о том, кто является перевозчиком его груза,
+                        то ответить на него он сможет, просто посмотрев трек посылки.
+                        Любые международные отправления доходят до страны получателя двумя основными путями:
+                    </div>
+                    <ul>
+                        <li class="mb-3">
+                            Через непосредственно государственные почтовые организации
+                            (например, в России это «Почта России», на Украине «Укрпочта»,
+                            в Китае - это сервисы «China Post», а в США - «USPS»), через EMS.
+                            Необходимый груз получатель должен будет забрать
+                            из указанного почтового отделения самостоятельно;
+                        </li>
+                        <li>
+                            Через международные курьерские организации (самыми популярными являются DHL,
+                            UPS и др.). В этом случае клиент может заказать доставку посылки прямо
+                            к себе на дом (цена за доставку в таком случае будет гораздо выше),
+                            или же может также забрать груз из местного почтового отделения или пункта
+                            самовывоза (если такой вариант предусмотрен у курьерской службы).
+                        </li>
+                    </ul>
+                    <div>
+                        Всю необходимую информацию о перевозчике указывает продавец заказанного вами товара.
+                        Вы можете узнать только страну, из которой отправляется товар (латинские буквы
+                        в конце номера отправления). Если добросовестный продавец указал и компанию,
+                        которая курирует груз, то вы можете проверить почтовое отправление.
+                    </div>
+
+                </div>
 
             </div>
         </div>
-    </div>
 
+
+
+    </div>
 </section>
