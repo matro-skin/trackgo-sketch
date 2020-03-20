@@ -60,7 +60,7 @@
 
 //@import "~bootstrap/scss/print";
 
-@import "../../src/fonts/Circe/stylesheet.css";
+@import "../../src/fonts/Circe/stylesheet";
 
 @import "helpers";
 @import "components/typo";
@@ -69,6 +69,7 @@
 @import "components/dropdown";
 @import "components/card-and-list";
 @import "components/nav";
+@import "components/accordion";
 @import "style";
 
 @import "sections/home-search";

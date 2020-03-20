@@ -25,6 +25,7 @@
 }
 
 .navbar-brand {
+	padding-left: $font-size-base/2;
 	img {
 		width: 100px;
         @include media-breakpoint-down(md) {

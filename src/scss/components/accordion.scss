@@ -1,0 +1,24 @@
+.accordion {
+	.card {
+		box-shadow: none;
+		border-width: 0;
+		background-color: $gray-100;
+		border-radius: $border-radius !important;
+		@include media-breakpoint-down(md) {
+			border-radius: $border-radius-sm !important;
+		}
+		.card-header {
+			background-color: transparent;
+			border-bottom-width: 0;
+			padding: 0;
+			.btn {
+				width: 100%;
+				text-align: left;
+				color: $dark;
+			}
+		}
+		& + .card {
+			margin-top: 2px;
+		}
+	}
+}

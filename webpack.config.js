@@ -103,16 +103,8 @@ const config = {
 				to: "./fonts"
 			},
 			{
-				from: "./src/favicon",
-				to: "./favicon"
-			},
-			{
 				from: "./src/img",
 				to: "./img"
-			},
-			{
-				from: "./src/uploads",
-				to: "./uploads"
 			},
 			{
 				from: "./src/svg",
