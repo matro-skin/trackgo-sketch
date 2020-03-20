@@ -1,0 +1,131 @@
+.delivery-items-card {
+    @include media-breakpoint-down(md) {
+        border-radius: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+}
+
+.delivery-item {
+    .delivery-map {
+        height: 0;
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
+    &.map-opened {
+        .show-map {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+        .delivery-map {
+            height: auto;
+        }
+    }
+    .circle {
+        background-color: $white;
+        width: 26px;
+        height: 26px;
+        border: solid 2px $gray-300;
+        border-radius: 50%;
+        i {
+            display: block;
+            background-color: $primary;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin: 2px;
+        }
+    }
+    .delivery-data {
+        &:before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 2px;
+            top: 0;
+            left: 23px;
+            height: 100%;
+            background-color: $gray-300;
+        }
+    }
+    &:first-child {
+        .delivery-data {
+            &:before {
+                top: 50%;
+                height: 50%;
+            }
+        }
+    }
+    &:last-child {
+        .delivery-data {
+            &:before {
+                height: 50%;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .delivery-dates {
+            padding-left: 46px;
+        }
+        &:not(:first-child) {
+            .delivery-dates {
+                padding-top: 1.25rem;
+                &:before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    top: 0;
+                    left: 23px;
+                    height: 100%;
+                    background-color: $gray-300;
+                }
+            }
+        }
+        .delivery-date {
+            font-size: 11px;
+        }
+        .delivery-year {
+            font-size: 10px;
+        }
+        .delivery-timeout {
+            font-size: 10px;
+        }
+        .label {
+            font-size: 13px;
+        }
+        .show-map {
+            font-size: 10px;
+        }
+        .delivery-type {
+            font-size: 10px;
+        }
+    }
+}
+
+.delivery-meta-code {
+    font-size: 24px;
+}
+
+.delivery-meta {
+    .lang-item {
+        margin-right: $font-size-base*-1;
+    }
+}
+
+.delivery-cards {
+    .card-body {
+        padding-left: $font-size-base*1.5;
+        padding-right: $font-size-base*1.5;
+    }
+    & > div {
+        &:not(:last-child) {
+            .caption {
+                @include media-breakpoint-down(md) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+a {
+	text-decoration: underline;
+	color: $gray-600;
+	&:hover {
+		color: $indigo;
+	}
+	&.text-primary {
+		color: $indigo;
+		&:hover {
+			color: $purple;
+		}
+
+	}
+}
+
+b, strong {
+    font-weight: $font-weight-bold;
+}
+
+small,
+.small {
+    font-size: 10px;
+}
+
+.text-md {
+    font-size: 16px;
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+    }
+}
+.text-lg {
+    font-size: 18px;
+    @include media-breakpoint-down(md) {
+        font-size: 16px;
+    }
+}
+.text-xl {
+    font-size: 24px;
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+.text-xxl {
+    font-size: 36px;
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+.text-xxxl {
+    font-size: 44px;
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+
+.lead {
+    font-size: 24px;
+    font-weight: $font-weight-bolder;
+    //color: $gray-600;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+.line-height-1 {
+    line-height: 1;
+}
+.line-height-md {
+    line-height: 16px;
+}
+
+.text-clear {
+    text-decoration: none;
+}

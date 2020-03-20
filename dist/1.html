@@ -1,46 +1,405 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="css/app.css?t=1584349700781" />
-    <title>TrackGo</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/">TrackGo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="1.html">1</a></li>
-            <li class="nav-item"><a class="nav-link" href="2.html">2</a></li>
-            <li class="nav-item"><a class="nav-link" href="3.html">3</a></li>
-            <li class="nav-item"><a class="nav-link" href="4.html">4</a></li>
-            <li class="nav-item"><a class="nav-link" href="5.html">5</a></li>
-            <li class="nav-item"><a class="nav-link" href="6.html">6</a></li>
-            <li class="nav-item"><a class="nav-link" href="7.html">7</a></li>
-            <li class="nav-item"><a class="nav-link" href="8.html">8</a></li>
-            <li class="nav-item"><a class="nav-link" href="9.html">9</a></li>
-            <li class="nav-item"><a class="nav-link" href="10.html">10</a></li>
-          </ul>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="stylesheet" href="css/app.css?t=1584697641232" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<title>TrackGo</title>
+</head>
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-0">
+			<div class="container">
+
+                <div class="row w-100 mx-0 align-items-center">
+
+                    <div class="col col-md-auto pl-0">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/logo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="drawer ease">
+                            <div class="drawer-backdrop ease"></div>
+                            <div class="drawer-inner ease">
+
+                                <div class="d-flex flex-column h-100">
+
+                                    <div class="row align-items-center">
+
+                                        <div class="col-md-auto pr-0 order-md-2">
+                                            <div class="lang-item bg-white text-right">
+                                                <div class="btn-group-vertical btn-group-sm">
+                                                    <a href="#" class="btn btn-outline-light font-weight-normal active">Ru</a>
+                                                    <a href="#" class="btn btn-outline-light font-weight-normal">En</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md order-md-0">
+                                            <ul class="navbar-nav bg-white pb-3 pb-md-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Почтовые службы</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Расширение для браузера</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Telegram bot</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                       data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                                        Другое…
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                        <a class="dropdown-item" href="#">Новости</a>
+                                                        <a class="dropdown-item" href="#">Статьи</a>
+                                                        <a class="dropdown-item" href="#">Виджеты для сайта</a>
+                                                        <a class="dropdown-item" href="#">Калькулятор срока доставки</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-auto order-md-1">
+                                            <div class="p-4 p-md-0">
+                                                <a href="#" class="google-play-badge btn btn-outline-light bg-white p-0 border-0">
+                                                    <svg><use xlink:href="/svg/google-play-badge-light.svg#google-play-badge-light"></use></svg>
+                                                </a>
+                                                <div class="d-md-none">
+                                                    <div class="small py-3">
+                                                        «Приложение простое и понятное, на русском языке,
+                                                        все сведения о посылке на одной странице,
+                                                        для любопытных - можно отследить все манипуляции с посылкой».
+                                                    </div>
+                                                    <ul class="list-inline pt-2">
+                                                        <li class="list-inline-item text-right">
+                                                            <div class="text-lg text-primary line-height-0">+1000</div>
+                                                            <small>отзывов</small>
+                                                        </li>
+                                                        <li class="list-inline-item text-center">
+                                                            <div class="text-lg text-primary line-height-0">4.8</div>
+                                                            <small>рейтинг</small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mt-auto p-4 d-md-none">
+                                        <a href="#" class="text-gray font-weight-bolder">
+                                            <svg class="icon" viewBox="0 0 18 18" preserveAspectRatio="none"><use xlink:href="/svg/sign-in.svg#sign-in"></use></svg>
+                                            Выйти
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="dropdown">
+                            <a href="#" class="btn btn-sm btn-outline-primary" id="dropdownLoginButton"
+                               data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                <svg class="icon" viewBox="0 0 18 18" preserveAspectRatio="none"><use xlink:href="/svg/sign-in.svg#sign-in"></use></svg>
+                                Войти
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLoginButton">
+
+                                <form class="px-4 py-2">
+                                    <div class="lead text-gray mb-2">Вход</div>
+                                    <div class="form-group mb-2">
+                                        <label for="login_email" class="sr-only">Email</label>
+                                        <input type="email" name="email" class="form-control"
+                                               id="login_email" placeholder="Email..." required />
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <label for="login_password" class="sr-only">Пароль</label>
+                                        <input type="password" name="password" class="form-control"
+                                               id="login_password" placeholder="Пароль..." required />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block text-lg">Вход</button>
+                                </form>
+
+                                <div class="text-center mt-3">
+                                    <div class="text-md text-gray">или с помощью соцсетей</div>
+                                    <ul class="list-inline mt-1 mb-4">
+                                        <li class="list-inline-item">
+                                            <a href="#"><svg class="icon-lg text-gray"><use xlink:href="/svg/vk.svg#vk"></use></svg></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><svg class="icon-lg text-gray"><use xlink:href="/svg/twitter.svg#twitter"></use></svg></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><svg class="icon-lg text-gray"><use xlink:href="/svg/linkedin.svg#linkedin"></use></svg></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><svg class="icon-lg text-gray"><use xlink:href="/svg/facebook.svg#facebook"></use></svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group btn-group-sm w-100">
+                                    <a href="#" class="btn btn-outline-light">Регистрация</a>
+                                    <a href="#" class="btn btn-outline-light">Забыли пароль?</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto px-0 d-md-none">
+                        <button type="button" class="btn btn-link drawer-toggle px-0">
+                            <svg><use xlink:href="/svg/menu.svg#menu"></use></svg>
+                        </button>
+                    </div>
+
+                </div>
+
+			</div>
+		</nav>
+	</header>
+	<main id="app">
+
+
+<section role="banner" id="section-home-search" class="bg-light-gray text-center">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-9 mx-auto">
+
+                <h1 class="font-weight-bold">Отслеживание посылок</h1>
+
+                <div class="caption text-md mb-5">
+                    Из <strong>AliExpress</strong>, <strong>Ebay.com</strong>, <strong>TaoBao</strong>,
+                    JD.com Joom, Wish - Почты России, Украины, Беларусии, Казахстана, Китая, AliExpress JD.com,
+                    Joom, Pandao, GearBest, Ebay.com, TaoBao быстро, легко и удобно
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="row align-items-center">
+                                <div class="col-auto text-gray">
+                                    <div class="pl-4">
+                                        <i class="fas fa-barcode fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="col pl-0">
+                                    <label for="home-search" class="sr-only">Отследить посылку</label>
+                                    <input type="search" id="home-search" name="search" class="form-control form-control-lg"
+                                           placeholder="Введите трек-код, например: RF727913178SG" />
+                                </div>
+                                <div class="col-md-auto submit-container">
+                                    <button type="submit" class="btn btn-primary btn-lg">Отследить посылку</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </nav>
-    <div id="app">
-      <div class="container">2</div>
+
     </div>
-    <script src="js/app.js?t=1584349700781"></script>
-  </body>
+
+</section>
+
+<div class="section-hr">
+    <button type="button" class="btn btn-outline-light bg-white rounded-circle position-absolute">
+        <i class="fas fa-angle-down"></i>
+    </button>
+</div>
+
+<section role="banner" id="section-home-X" class="bg-light-gray">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col col-md-auto pr-0">
+                <a href="#" class="btn btn-link btn-sm text-sm text-gray">
+                    <i class="fas fa-redo"></i>
+                    <span class="pl-1">Обновить</span>
+                </a>
+            </div>
+            <div class="col-auto pl-0">
+                <small class="text-gray">Последнее обновление: 2 часа</small>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8 mb-2 mb-md-0">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="delivery-items">
+
+                            <div class="delivery-item">
+                                <div class="row align-items-center">
+                                <div class="col-md-2 delivery-dates">
+                                    <div class="row align-items-center line-height-1">
+                                        <div class="col-auto col-md-12 pr-2 delivery-date">
+                                            <strong>29 Янв.</strong>
+                                            <span>14:25</span>
+                                        </div>
+                                        <div class="col col-md-auto pl-0 pl-md-3 pr-2 delivery-year">
+                                            <small class="text-gray">2020</small>
+                                        </div>
+                                        <div class="col-auto pl-0 delivery-timeout">
+                                            <span class="small">
+                                                <strong class="text-gray">18 дней</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="delivery-data row align-items-center">
+                                        <div class="col-auto pr-0 pr-md-3">
+                                            <div class="circle"><i></i></div>
+                                        </div>
+                                        <div class="col py-2">
+                                            <div class="label font-weight-bold text-lg">Покинуло сортировочный центр</div>
+                                            <div class="text-gray">
+                                                <a href="#" class="text-clear show-map mr-2">Посмотреть на карте <i class="fas fa-angle-down ease"></i></a>
+                                                <span class="delivery-type">Международная обработка</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto d-none d-md-block">
+                                            <button type="button" class="btn btn-xs btn-outline-secondary">
+                                                Почта России
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="delivery-map ease">
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a269e577e3556bc1efae57decf54d56e629352e49f375d567bd4f5ffebd0b5b&amp;width=100%25&amp;height=150&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+                            </div>
+                            <div class="delivery-item">
+                                <div class="row align-items-center">
+                                <div class="col-md-2 delivery-dates">
+                                    <div class="row align-items-center line-height-1">
+                                        <div class="col-auto col-md-12 pr-2 delivery-date">
+                                            <strong>29 Янв.</strong>
+                                            <span>14:25</span>
+                                        </div>
+                                        <div class="col col-md-auto pl-0 pl-md-3 pr-2 delivery-year">
+                                            <small class="text-gray">2020</small>
+                                        </div>
+                                        <div class="col-auto pl-0 delivery-timeout">
+                                            <span class="small">
+                                                <strong class="text-gray">18 дней</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="delivery-data row align-items-center">
+                                        <div class="col-auto pr-0 pr-md-3">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="col py-2">
+                                            <div class="label font-weight-bold text-lg">Покинуло сортировочный центр</div>
+                                            <div class="text-gray">
+                                                <a href="#" class="text-clear show-map mr-2">Посмотреть на карте <i class="fas fa-angle-down ease"></i></a>
+                                                <span class="delivery-type">Международная обработка</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto d-none d-md-block">
+                                            <button type="button" class="btn btn-xs btn-outline-secondary">
+                                                Почта России
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="delivery-map ease">
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a269e577e3556bc1efae57decf54d56e629352e49f375d567bd4f5ffebd0b5b&amp;width=100%25&amp;height=150&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+                            </div>
+                            <div class="delivery-item">
+                                <div class="row align-items-center">
+                                <div class="col-md-2 delivery-dates">
+                                    <div class="row align-items-center line-height-1">
+                                        <div class="col-auto col-md-12 pr-2 delivery-date">
+                                            <strong>29 Янв.</strong>
+                                            <span>14:25</span>
+                                        </div>
+                                        <div class="col col-md-auto pl-0 pl-md-3 pr-2 delivery-year">
+                                            <small class="text-gray">2020</small>
+                                        </div>
+                                        <div class="col-auto pl-0 delivery-timeout">
+                                            <span class="small">
+                                                <strong class="text-gray">18 дней</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="delivery-data row align-items-center">
+                                        <div class="col-auto pr-0 pr-md-3">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="col py-2">
+                                            <div class="label font-weight-bold text-lg">Покинуло сортировочный центр</div>
+                                            <div class="text-gray">
+                                                <a href="#" class="text-clear show-map mr-2">Посмотреть на карте <i class="fas fa-angle-down ease"></i></a>
+                                                <span class="delivery-type">Международная обработка</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto d-none d-md-block">
+                                            <button type="button" class="btn btn-xs btn-outline-secondary">
+                                                Почта России
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="delivery-map ease">
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a269e577e3556bc1efae57decf54d56e629352e49f375d567bd4f5ffebd0b5b&amp;width=100%25&amp;height=150&amp;lang=ru_RU&amp;scroll=false"></script>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="list-group">
+                    <div class="list-group-item">
+                        11
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+</div>
+
+		</main>
+		<script src="js/app.js?t=1584697641232"></script>
+	</body>
 </html>
+

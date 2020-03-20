@@ -17,7 +17,7 @@
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
-//@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/input-group";
 @import "~bootstrap/scss/custom-forms";
 @import "~bootstrap/scss/nav";
@@ -30,7 +30,7 @@
 @import "~bootstrap/scss/alert";
 //@import "~bootstrap/scss/progress";
 //@import "~bootstrap/scss/media";
-//@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 //@import "~bootstrap/scss/toasts";
 //@import "~bootstrap/scss/modal";
@@ -60,11 +60,17 @@
 
 //@import "~bootstrap/scss/print";
 
-#app {
-	padding-top: 4.5rem;
-	padding-bottom: 2rem;
-}
+@import "../../src/fonts/Circe/stylesheet.css";
 
-html, body {
-	font-size: 14px;
-}
+@import "helpers";
+@import "components/typo";
+@import "components/button";
+@import "components/form";
+@import "components/dropdown";
+@import "components/card-and-list";
+@import "components/nav";
+@import "style";
+
+@import "sections/home-search";
+@import "sections/home-items";
+@import "sections/home-stats";

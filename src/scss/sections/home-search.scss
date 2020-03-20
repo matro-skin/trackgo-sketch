@@ -1,0 +1,23 @@
+#section-home-search {
+    @include media-breakpoint-down(md) {
+        padding-bottom: 10.5rem;
+    }
+    .card {
+        box-shadow: $box-shadow-lg;
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+    .form-control {
+        background-color: transparent;
+        border-width: 0;
+        box-shadow: none;
+    }
+    .submit-container {
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 100%;
+            margin-top: $font-size-base;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.list-group,
+.card {
+    box-shadow: $box-shadow;
+    @include media-breakpoint-down(md) {
+        border-radius: $border-radius-sm;
+    }
+}

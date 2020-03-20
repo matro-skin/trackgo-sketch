@@ -85,7 +85,12 @@ const config = {
 				test: /\.html$/,
 				include: path.resolve(__dirname, "src/html/includes"),
 				use: ["raw-loader"]
-			}
+			},
+            {
+                test: /\.html$/,
+                include: path.resolve(__dirname, "src/html/components"),
+                use: ["raw-loader"]
+            }
 		]
 	},
 	plugins: [
@@ -108,6 +113,10 @@ const config = {
 			{
 				from: "./src/uploads",
 				to: "./uploads"
+			},
+			{
+				from: "./src/svg",
+				to: "./svg"
 			}
 		])
 	].concat(htmlPlugins)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="23px" height="19px" viewBox="0 0 23 19" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="menu" transform="translate(1 1)">
+    <path d="M21 0.5L0.5 0.5" id="Line" fill="none" stroke="#727292" stroke-width="2" stroke-linecap="square" />
+    <path d="M21 0.5L0.5 0.5" transform="translate(0 8)" id="Line-Copy" fill="none" stroke="#727292" stroke-width="2" stroke-linecap="square" />
+    <path d="M21 0.5L0.5 0.5" transform="translate(0 16)" id="Line-Copy-2" fill="none" stroke="#727292" stroke-width="2" stroke-linecap="square" />
+  </g>
+</svg>

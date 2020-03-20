@@ -1,0 +1,22 @@
+#section-home-stats {
+    .total {
+        .amount {
+            font-size: 44px;
+        }
+        .caption {
+            font-size: 24px;
+        }
+    }
+    .cards {
+        .card {
+            min-height: 162px;
+        }
+        .card-body {
+            padding-top: $font-size-base;
+            padding-bottom: $font-size-base;
+            .row {
+                min-height: $font-size-base*3.5;
+            }
+        }
+    }
+}

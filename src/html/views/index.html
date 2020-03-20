@@ -1,5 +1,94 @@
 <%= _.template(require('./../includes/header.html').default)() %>
 
-<div class="container">Welcome</div>
+<div class="container">
+
+	<div class="row mb-4">
+		<div class="col-lg-auto">
+
+			<div class="form-group">
+				<input type="text" class="form-control" value="E-mail..." />
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control is-valid" value="E-mail..." />
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control is-invalid" value="E-mail..." />
+			</div>
+
+			<div class="form-group">
+				<div class="input-group input-group-sm">
+					<input type="text" class="form-control" value="https://trackgo.ru/?1234567890" readonly>
+					<div class="input-group-append">
+						<button class="btn btn-light" type="button">
+							<i class="fas fa-link"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-auto">
+
+			<div class="form-group">
+				<a href="#">Common Link</a>
+			</div>
+
+			<div class="form-group">
+				<a href="#" class="text-primary font-weight-bold">Primary Link</a>
+			</div>
+
+			<div class="form-group">
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+					<label class="custom-control-label" for="customSwitch1">Checked</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch2">
+					<label class="custom-control-label" for="customSwitch2">Unchecked</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck1">
+					<label class="custom-control-label" for="customCheck1">Checkbox</label>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-auto">
+
+			<div class="form-group">
+				<button type="button" class="btn btn-sm btn-outline-primary">
+					<i class="fas fa-sign-in-alt mr-2"></i> Войти
+				</button>
+			</div>
+
+			<div class="form-group">
+				<button type="button" class="btn btn-lg btn-primary">
+					Отследить посылку
+				</button>
+			</div>
+
+			<div class="form-group">
+				<button type="button" class="btn btn-lg btn-secondary">
+					Добавить посылку
+				</button>
+			</div>
+
+		</div>
+	</div>
+
+	<nav class="navbar ease">
+		<div class="navbar-brand text-gray">
+			<i class="fas fa-truck fa-2x"></i>
+		</div>
+
+	</nav>
+
+</div>
 
 <%= _.template(require('./../includes/footer.html').default)() %>

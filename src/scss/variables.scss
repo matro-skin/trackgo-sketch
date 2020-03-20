@@ -1,10 +1,18 @@
-$indigo: #6062FF; // hover: #4142C2
+$font-weight-bold: 700;
+$font-weight-bolder: 500;
+$font-size-base: 1rem;
+$font-size-lg: 1.285rem;
+
+$indigo: #6062FF; // hover: $purple
+$purple: #4142C2;
 $red: #D13030;
 $teal: #30D1A7;
 
 $gray-100: #F6F6F9; // input bg
-$gray-150: #E2E2EE; // input sm border
+$gray-150: #E2E2EE; // borders
+$gray-160: #EAEAF1; // dropdown shadow
 $gray-200: #E6E6F0;
+$gray-250: #E5E5F0;
 $gray-300: #BBBBCB;
 $gray-600: #727292;
 $gray-700: #474761;
@@ -12,11 +20,33 @@ $gray-900: #222222;
 
 $primary: $indigo;
 $success: $teal;
-$secondary: $gray-600;
+$secondary: $gray-300;
+$gray: $gray-600;
 $dark: $gray-900;
+$light: $gray-250;
 
-$input-border-radius: 6px;
-$input-border-radius-sm: 2px;
+$theme-colors: ();
+$theme-colors: map-merge(
+    (
+        "gray": $gray-600,
+        "light-gray": $gray-100
+        //"primary":    $primary,
+        //"secondary":  $secondary,
+        //"success":    $success,
+        //"info":       $info,
+        //"warning":    $warning,
+        //"danger":     $danger,
+        //"light":      $light,
+        //"dark":       $dark
+    ),
+    $theme-colors
+);
+
+$border-radius: 6px;
+$border-radius-sm: 3px;
+
+$input-border-radius: $border-radius;
+$input-border-radius-sm: $border-radius-sm;
 $input-border-color: $gray-300;
 $input-focus-border-color: $gray-600;
 $input-focus-box-shadow: none;
@@ -24,11 +54,20 @@ $input-padding-x: 1.5rem;
 $input-padding-y: 1rem;
 $input-padding-x-sm: 1rem;
 $input-padding-y-sm: 0.7rem;
-$input-font-size-sm: 1rem;
+$input-font-size-sm: $font-size-base;
 $input-bg: $gray-100;
+$input-disabled-bg: $gray-100;
 
-$btn-border-radius: 6px;
-$btn-border-radius-sm: 3px;
+$btn-border-radius: $border-radius;
+$btn-border-radius-sm: $border-radius-sm;
+
+$btn-focus-box-shadow: none;
+
+$btn-font-weight: $font-weight-bold;
+
+$btn-font-size: $font-size-base;
+$btn-font-size-sm: $font-size-base;
+$btn-font-size-lg: $font-size-lg;
 
 $btn-padding-y: 16px;
 $btn-padding-x: 30px;
@@ -36,4 +75,32 @@ $btn-padding-x: 30px;
 $btn-padding-y-sm: 10px;
 $btn-padding-x-sm: 20px;
 
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 30px;
+
 $box-shadow: 0 0 10px $gray-200;
+$box-shadow-lg: 0 0 25px $gray-160;
+
+$card-border-color: $gray-150;
+$card-spacer-x: $font-size-base*2;
+$card-spacer-y: $font-size-base*2;
+
+$list-group-border-color: $gray-150;
+$list-group-item-padding-x: $font-size-base*2;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 440px,
+    md: 576px,
+    lg: 992px,
+    xl: 1340px
+);
+
+$container-max-widths: (
+    sm: 400px,
+    md: 540px,
+    lg: 960px,
+    xl: 1280px
+);
+
+$grid-gutter-width: $font-size-base*1.5;

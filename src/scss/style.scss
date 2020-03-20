@@ -1,0 +1,84 @@
+#app {
+	padding-top: 5rem;
+    @include media-breakpoint-down(md) {
+        padding-top: 50px;
+    }
+}
+
+html, body {
+	font-family: 'Circe', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+
+svg {
+	@extend .ease;
+	&.icon {
+		width: 18px;
+		height: 18px;
+        @include media-breakpoint-down(md) {
+            width: 13px;
+            height: 13px;
+        }
+	}
+    &.icon-lg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.box-shadow {
+    box-shadow: $box-shadow;
+}
+.box-shadow-sm {
+    @include media-breakpoint-down(md) {
+        box-shadow: $box-shadow;
+    }
+}
+.box-shadow-md {
+    @include media-breakpoint-up(lg) {
+        box-shadow: $box-shadow;
+    }
+}
+
+svg.text-gray,
+.text-gray svg {
+    fill: $gray;
+    &:hover {
+        fill: $primary;
+    }
+}
+
+section {
+    padding-top: 4.5rem;
+    padding-bottom: 7.5rem;
+}
+.section-hr {
+    position: relative;
+    height: 6px;
+    background-color: $white;
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        box-shadow: $box-shadow-lg;
+        padding: 0;
+        left: 50%;
+        margin-left: -25px;
+        top: -22px;
+    }
+}
+
+.card + .card,
+.card + .list-group,
+.list-group + .card {
+    margin-top: $grid-gutter-width;
+    @include media-breakpoint-down(md) {
+        margin-top: $font-size-base/2;
+    }
+}
+
+

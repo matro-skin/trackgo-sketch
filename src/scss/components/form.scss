@@ -1,0 +1,102 @@
+input {
+	&:not([type="checkbox"]) {
+		&:disabled,
+		&[readonly] {
+			border-color: $gray-150;
+			background: $gray-100;
+		}
+	}
+
+}
+
+$custom-switch-width: 65px;
+$custom-switch-height: 30px;
+$custom-switch-border-width: 2px;
+
+.custom-switch {
+	padding-left: calc(#{$custom-switch-width} + #{$font-size-base}/2);
+	min-height: $custom-switch-height;
+	.custom-control-input {
+		width: 0;
+		height: 0;
+		&:checked + .custom-control-label {
+			&:before {
+				background-color: $teal;
+				border-color: $teal;
+			}
+			&:after {
+				left: ($custom-switch-width + $custom-switch-height)/-2 + $custom-switch-border-width;
+			}
+		}
+	}
+	.custom-control-label {
+		display: flex;
+		min-height: $custom-switch-height;
+		align-items: center;
+		&:before {
+			background-color: $danger;
+			border-color: $danger;
+			top: 0;
+			left: calc(#{$custom-switch-width}*-1 - #{$font-size-base}/2);
+			width: $custom-switch-width;
+			height: $custom-switch-height;
+			border-radius: $custom-switch-height/2;
+		}
+		&:after {
+			background-color: $white;
+			top: $custom-switch-border-width;
+			left: calc((#{$custom-switch-width} + #{$custom-switch-height})/-2 - #{$custom-switch-height}/2 - #{$font-size-base}/2);
+			width: $custom-switch-height - $custom-switch-border-width*2;
+			height: $custom-switch-height - $custom-switch-border-width*2;
+			border-radius: $custom-switch-height*2 - $custom-switch-border-width;
+		}
+	}
+}
+
+$custom-check-width: 25px;
+$custom-check-border-width: 3px;
+
+.custom-checkbox {
+	padding-left: calc(#{$custom-check-width} + #{$font-size-base}/2);
+	min-height: $custom-check-width;
+	.custom-control-input {
+		width: 0;
+		height: 0;
+	}
+	.custom-control-label {
+		display: flex;
+		min-height: $custom-check-width;
+		align-items: center;
+		&:before {
+			top: 0;
+			left: calc(#{$custom-check-width}*-1 - #{$font-size-base}/2);
+			width: $custom-check-width;
+			height: $custom-check-width;
+			border-radius: $border-radius;
+			background-color: $white !important;
+			border-color: $gray-150 !important;
+			box-shadow: $box-shadow !important;
+		}
+		&:after {
+			@extend .ease;
+			top: $custom-check-border-width;
+			left: calc(#{$custom-check-width}*-1 + #{$custom-check-border-width} - #{$font-size-base}/2);
+			width: $custom-check-width - $custom-check-border-width*2;
+			height: $custom-check-width - $custom-check-border-width*2;
+			border-radius: 4px;
+			opacity: 0;
+			background-image: none !important;
+			background-color: $indigo;
+		}
+		&:hover {
+			&:before {
+				border-color: $gray-300 !important;
+			}
+		}
+	}
+	.custom-control-input:checked + .custom-control-label {
+		&:after {
+			opacity: 1;
+		}
+	}
+}

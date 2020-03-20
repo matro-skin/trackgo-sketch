@@ -1,0 +1,93 @@
+.btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    line-height: 22px;
+    text-decoration: none;
+    @include media-breakpoint-down(md) {
+        padding: 8px 12px;
+        line-height: 17px;
+    }
+	i {
+		&.far,
+		&.fas {
+			font-size: 16px;
+		}
+	}
+	.icon {
+		margin-right: $font-size-base/2;
+	}
+}
+
+.btn-link {
+    text-decoration: none !important;
+}
+
+.btn-xs {
+    padding: 5px 14px;
+    line-height: 18px;
+    border-radius: $border-radius-sm;
+}
+.btn-sm {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 19px;
+    @include media-breakpoint-down(md) {
+        padding: 5px 11px;
+        line-height: 16px;
+    }
+}
+.btn-lg {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 28px;
+}
+
+.btn-light {
+	color: $gray-600 !important;
+	&:hover {
+		background-color: $indigo !important;
+		border-color: $indigo !important;
+		color: $white !important;
+	}
+}
+
+.btn-primary {
+	&:hover,
+	&:active {
+		background-color: $purple !important;
+		border-color: $purple !important;
+	}
+}
+.btn-secondary {
+	color: $white !important;
+	&:hover,
+	&:active {
+		background-color: $gray-600 !important;
+		border-color: $gray-600 !important;
+	}
+}
+.btn-outline-secondary {
+    color: $gray;
+}
+
+.btn-outline-primary {
+	svg {
+		fill: $indigo;
+	}
+	&:hover,
+	&:active {
+		background-color: inherit !important;
+		color: $purple !important;
+		border-color: $purple !important;
+		svg {
+			fill: $purple;
+		}
+	}
+}
+
+.google-play-badge {
+    svg {
+        width: 140px;
+        height: 41px;
+    }
+}
