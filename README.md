@@ -5,7 +5,7 @@
 
 ## Roadmap
 #### Desktop
-- [ ] Home
+- [x] Home
 - [ ] ЛК Мои посылки
 - [ ] ЛК Aliexpress
 - [ ] ЛК Мои посылки (no open)
@@ -15,7 +15,7 @@
 - [ ] Mercury
 
 ### Mobile
-- [ ] Home (вход/рег)
+- [x] Home (вход/рег)
 - [ ] Home
 - [ ] Home (меню)
 - [ ] Home (full)
@@ -24,3 +24,6 @@
 - [ ] ЛК Добавить посылку
 - [ ] Почтовые отправления - служба
 - [ ] Footer
+
+#### Extra
+- [ ] svg
