@@ -1,0 +1,38 @@
+#my-posts {
+	.btn-cashback {
+		height: calc(5rem + 2px);
+	}
+}
+
+#add-post-col {
+	@include media-breakpoint-up(lg) {
+		display: block !important;
+	}
+}
+
+.my-nav {
+	.nav-item {
+		.nav-link {
+			line-height: 1rem;
+			padding-top: 2rem;
+			padding-bottom: calc(2rem - 3px);
+			font-size: 18px;
+			text-decoration: none;
+			border-bottom: solid 3px transparent;
+			@include media-breakpoint-down(md) {
+				padding-top: 1rem;
+				padding-bottom: calc(1rem - 3px);
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+				font-size: 13px;
+			}
+			&.active {
+				border-bottom-color: $primary;
+				font-weight: $font-weight-bold;
+			}
+			&.disabled {
+				font-size: 16px;
+			}
+		}
+	}
+}

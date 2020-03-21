@@ -3,8 +3,8 @@
         border-radius: 0;
         border-left-width: 0;
         border-right-width: 0;
-        margin-left: -1rem;
-        margin-right: -1rem;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
     }
 }
 
@@ -123,11 +123,15 @@ $line-left: 22px;
         padding-left: $font-size-base*1.5;
         padding-right: $font-size-base*1.5;
     }
+    .caption {
+
+    }
     & > div {
         &:not(:last-child) {
             .caption {
                 @include media-breakpoint-down(md) {
                     font-size: 10px;
+                    height: 60px;
                 }
             }
         }

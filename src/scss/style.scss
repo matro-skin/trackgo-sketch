@@ -11,9 +11,13 @@ html, body {
 	font-style: normal;
 	font-size: 14px;
 }
+a,
+.btn,
+svg {
+    @extend .ease;
+}
 
 svg {
-	@extend .ease;
 	&.icon {
 		width: 18px;
 		height: 18px;
@@ -123,5 +127,3 @@ footer {
         margin-top: $font-size-base/2;
     }
 }
-
-

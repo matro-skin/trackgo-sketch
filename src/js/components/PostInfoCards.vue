@@ -4,7 +4,7 @@
 		<div class="col-6 col-lg pr-1 pr-lg-2 h-100">
 			<div class="card">
 				<div class="card-body">
-					<div class="text-gray caption mb-2">
+					<div class="caption text-gray caption mb-2">
 						Используйте личный кабинет,
 						чтобы сохранять и отслеживать все ваши посылки
 					</div>
@@ -18,7 +18,7 @@
 		<div class="col-6 col-lg pl-1 pl-lg-2 order-lg-last">
 			<div class="card">
 				<div class="card-body">
-					<div class="text-gray caption mb-2">
+					<div class="caption text-gray caption mb-2">
 						Если вы много времени проводите
 						в мессенджерах, используйте нашего телеграм бота
 					</div>
@@ -32,7 +32,7 @@
 		<div class="col-12 col-lg mt-2 mt-lg-0 px-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<div class="text-gray caption mb-2">
+					<div class="caption text-gray caption mb-2">
 						Если вы часто просматривайте посылки с телефона,
 						установите удобнее приложение
 					</div>

@@ -22,18 +22,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="#">Telegram bot</a>
 							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								   data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-									Другое…
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Новости</a>
-									<a class="dropdown-item" href="#">Статьи</a>
-									<a class="dropdown-item" href="#">Виджеты для сайта</a>
-									<a class="dropdown-item" href="#">Калькулятор срока доставки</a>
-								</div>
-							</li>
+							<DropdownMenu />
 						</ul>
 					</div>
 
@@ -78,11 +67,13 @@
 <script>
 	import GooglePlayButton from "./GooglePlayButton";
 	import LangSwitch from "./LangSwitch";
+	import DropdownMenu from "./DropdownMenu";
 	export default {
 
 		name: "Drawer",
 
 		components: {
+			DropdownMenu,
 			LangSwitch, GooglePlayButton
 		}
 
