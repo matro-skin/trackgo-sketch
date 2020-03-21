@@ -53,7 +53,23 @@ svg.text-gray,
 section {
     padding-top: 4.5rem;
     padding-bottom: 7.5rem;
+    @include media-breakpoint-down(md) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
+
+footer {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    @include media-breakpoint-down(md) {
+        padding: 2rem 1rem;
+    }
+    .logo {
+        width: 9rem;
+    }
+}
+
 .section-hr {
     position: relative;
     height: 6px;
