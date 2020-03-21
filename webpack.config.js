@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const { VueLoaderPlugin } = require("vue-loader");
 
 function generateHtmlPlugins(templateDir) {
 	const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -20,7 +21,8 @@ function generateHtmlPlugins(templateDir) {
 	});
 }
 
-const htmlPlugins = generateHtmlPlugins("./src/html/views");
+// const htmlPlugins = generateHtmlPlugins("./src/html/views");
+const htmlPlugins = generateHtmlPlugins("./src/html");
 
 const config = {
 	entry: ["./src/js/app.js", "./src/scss/app.scss"],
@@ -81,19 +83,42 @@ const config = {
 					}
 				]
 			},
+			// {
+			// 	test: /\.html$/,
+			// 	include: path.resolve(__dirname, "src/html/includes"),
+			// 	use: ["raw-loader"]
+			// },
+            // {
+            //     test: /\.html$/,
+            //     include: path.resolve(__dirname, "src/html/components"),
+            //     use: ["raw-loader"]
+            // },
 			{
 				test: /\.html$/,
-				include: path.resolve(__dirname, "src/html/includes"),
+				include: path.resolve(__dirname, "src/html"),
 				use: ["raw-loader"]
 			},
-            {
-                test: /\.html$/,
-                include: path.resolve(__dirname, "src/html/components"),
-                use: ["raw-loader"]
-            }
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader'
+				}
+			},
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader'
+			}
 		]
 	},
+	resolve: {
+		alias: {
+			'vue$': 'vue/dist/vue.esm.js'
+		},
+		extensions: ['*', '.js', '.vue', '.json']
+	},
 	plugins: [
+		new VueLoaderPlugin(),
 		new MiniCssExtractPlugin({
 			filename: "./css/app.css"
 		}),
