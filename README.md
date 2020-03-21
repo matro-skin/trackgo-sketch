@@ -5,25 +5,29 @@
 
 ## Roadmap
 #### Desktop
+- [x] Header
 - [x] Home
 - [ ] ЛК Мои посылки
 - [ ] ЛК Aliexpress
 - [ ] ЛК Мои посылки (no open)
-- [ ] ЛК Aliexpress (устаовить расширение)
+- [ ] ЛК Aliexpress (установить расширение)
 - [ ] Почтовые отправления
 - [ ] Почтовые отправления - служба
-- [ ] Mercury
+- [x] Footer
 
 ### Mobile
+- [x] Header
 - [x] Home (вход/рег)
-- [ ] Home
-- [ ] Home (меню)
-- [ ] Home (full)
+- [x] Home
+- [x] Home (меню)
+- [x] Home (full)
 - [ ] ЛК Мои посылки (no open)
 - [ ] ЛК Мои посылки (open)
 - [ ] ЛК Добавить посылку
 - [ ] Почтовые отправления - служба
-- [ ] Footer
+- [x] Footer
 
 #### Extra
 - [ ] svg
+- [ ] boxes
+- [ ] animations
