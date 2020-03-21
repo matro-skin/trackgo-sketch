@@ -1,6 +1,6 @@
 <template>
 	<div class="drawer ease">
-		<div class="drawer-backdrop ease"></div>
+		<div class="drawer-backdrop ease" @click="$root.$emit('drawer')"></div>
 		<div class="drawer-inner ease">
 
 			<div class="d-flex flex-column h-100">

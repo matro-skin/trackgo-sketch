@@ -1,5 +1,5 @@
 <template>
-	<footer id="footer">
+	<footer id="footer" class="bg-light-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 mb-4 mb-md-0">
@@ -30,20 +30,7 @@
 				</div>
 				<div class="col-lg">
 					<div class="text-lg">Контакты</div>
-					<ul class="list-inline mt-1 mb-4">
-						<li class="list-inline-item">
-							<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/vk.svg#vk"></use></svg></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/twitter.svg#twitter"></use></svg></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/linkedin.svg#linkedin"></use></svg></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/facebook.svg#facebook"></use></svg></a>
-						</li>
-					</ul>
+					<SocialButtons />
 					<a href="mailto:webmaster@trackgo.ru" class="text-gray text-clear">
 						webmaster@trackgo.ru
 					</a>
@@ -55,8 +42,15 @@
 </template>
 
 <script>
+	import SocialButtons from "../components/SocialButtons";
 	export default {
-		name: "Footer"
+
+		name: "Footer",
+
+		components: {
+			SocialButtons
+		}
+
 	}
 </script>
 

@@ -12,9 +12,7 @@
 					</div>
 
 					<div class="col">
-
 						<Drawer />
-
 					</div>
 
 					<div class="col-auto">
@@ -43,20 +41,7 @@
 
 								<div class="text-center mt-3">
 									<div class="text-md text-gray">или с помощью соцсетей</div>
-									<ul class="list-inline mt-1 mb-4">
-										<li class="list-inline-item">
-											<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/vk.svg#vk"></use></svg></a>
-										</li>
-										<li class="list-inline-item">
-											<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/twitter.svg#twitter"></use></svg></a>
-										</li>
-										<li class="list-inline-item">
-											<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/linkedin.svg#linkedin"></use></svg></a>
-										</li>
-										<li class="list-inline-item">
-											<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/facebook.svg#facebook"></use></svg></a>
-										</li>
-									</ul>
+									<SocialButtons />
 								</div>
 
 								<div class="btn-group btn-group-sm w-100">
@@ -69,7 +54,8 @@
 					</div>
 
 					<div class="col-auto px-0 d-lg-none">
-						<button type="button" class="btn btn-link drawer-toggle px-0">
+						<button type="button" class="btn btn-link drawer-toggle px-0"
+						        @click="$root.$emit('drawer', true)">
 							<svg><use xlink:href="svg/menu.svg#menu"></use></svg>
 						</button>
 					</div>
@@ -83,11 +69,13 @@
 
 <script>
 	import Drawer from "../components/header/Drawer";
+	import SocialButtons from "../components/SocialButtons";
 	export default {
 
 		name: "Header",
 
 		components: {
+			SocialButtons,
 			Drawer
 		}
 
