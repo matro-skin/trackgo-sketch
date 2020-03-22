@@ -1,5 +1,6 @@
 #main {
 	padding-top: 5rem;
+    overflow-x: hidden;
     @include media-breakpoint-down(md) {
         padding-top: 50px;
     }
@@ -11,6 +12,7 @@ html, body {
 	font-style: normal;
 	font-size: 14px;
 }
+
 a,
 .btn,
 svg {
@@ -29,6 +31,13 @@ svg {
     &.icon-lg {
         width: 25px;
         height: 25px;
+    }
+}
+
+
+.hidden-md {
+    @include media-breakpoint-down(md) {
+        display: none !important;
     }
 }
 
@@ -128,13 +137,6 @@ footer {
     }
 }
 
-.box-macbook {
-    position: absolute;
-    width: 30%;
-    left: -12%;
-    bottom: 2%;
-}
-
 .service {
     img {
         width: 5rem;
@@ -142,51 +144,5 @@ footer {
         @include media-breakpoint-down(md) {
             border-right: $border-radius-sm;
         }
-    }
-}
-
-.post-box {
-    position: absolute;
-    pointer-events: none;
-    display: inline-block;
-    img {
-        opacity: 0.7;
-        width: 100%;
-        height: auto;
-    }
-}
-
-@for $blur from 1 through 6 {
-    .blur-#{$blur} {
-        filter: blur(#{$blur}px);
-        -webkit-filter: blur(#{$blur}px);
-        -moz-filter: blur(#{$blur}px);
-        -o-filter: blur(#{$blur}px);
-        -ms-filter: blur(#{$blur}px);
-    }
-}
-#box1 {
-    left: 2%;
-    top: 0;
-    width: 13%;
-    img {
-        transform: rotate(23deg);
-    }
-}
-#box2 {
-    right: -14%;
-    top: 29%;
-    width: 27%;
-    z-index: 1;
-    img {
-        transform: rotate(-43deg);
-    }
-}
-#box3 {
-    right: 15%;
-    top: 53%;
-    width: 18%;
-    img {
-        transform: rotate(-12deg);
     }
 }

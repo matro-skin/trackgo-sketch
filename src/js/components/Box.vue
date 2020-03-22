@@ -1,7 +1,6 @@
 <template>
 	<transition name="fade" appear>
-		<div :id="'box'+id"
-		     :class="'post-box blur-'+blur+' animated pulse infinite slow'">
+		<div :id="'box'+id" :class="classes">
 			<img src="img/box.png" alt="" />
 		</div>
 	</transition>
@@ -10,6 +9,24 @@
 <script>
 	export default {
 		name: "Box",
-		props: [ 'id', 'blur' ]
+		data() {
+			return {
+				delay: Math.floor(Math.random()*(5 - 1) + 1)
+			}
+		},
+		props: [ 'id', 'blur' ],
+		computed: {
+			classes() {
+				return [
+					'post-box',
+					`blur-${this.blur}`,
+					'animated',
+					'pulse',
+					'infinite',
+					'slow',
+					`delay-${this.delay}s`
+				]
+			}
+		}
 	}
 </script>

@@ -17,10 +17,14 @@
 
 				<SearchPost />
 
-				<Box :id="1" :blur="2" />
+				<Box :id="1" :blur="2" class="hidden-md" />
 				<Box :id="2" :blur="5" />
 
 			</div>
+			<div class="container">
+
+			</div>
+
 		</section>
 
 		<div class="section-hr">

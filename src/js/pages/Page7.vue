@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section id="service-section" class="bg-light-gray">
-			<div class="container">
+			<div class="container position-relative">
 
 				<h1 class="text-xxl text-center">
 					<span class="d-block font-weight-bold">One World Express</span>
@@ -23,6 +23,9 @@
 				</div>
 
 				<SearchPost />
+
+				<Box :id="1" :blur="2" class="hidden-md" />
+				<Box :id="2" :blur="5" />
 
 			</div>
 		</section>
@@ -74,9 +77,11 @@
 <script>
 	import SearchPost from "../components/SearchPost";
 	import AppWidget from "../components/AppWidget";
+	import Box from "../components/Box";
 	export default {
 		name: "Page7",
 		components: {
+			Box,
 			AppWidget,
 			SearchPost
 		}

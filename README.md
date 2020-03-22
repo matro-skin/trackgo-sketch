@@ -30,5 +30,5 @@
 
 #### Extra
 - [ ] svg
-- [ ] boxes
+- [x] boxes
 - [ ] animations

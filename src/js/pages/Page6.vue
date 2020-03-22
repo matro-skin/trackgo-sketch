@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section id="search-section" class="bg-light-gray">
-			<div class="container">
+			<div class="container position-relative">
 
 				<h1 class="text-xxl text-center font-weight-bold">
 					<span class="text-primary">462</span>
@@ -19,6 +19,9 @@
 				</div>
 
 				<SearchPost />
+
+				<Box :id="1" :blur="2" class="hidden-md" />
+				<Box :id="2" :blur="5" />
 
 			</div>
 		</section>
@@ -64,6 +67,7 @@
 
 <script>
 	import SearchPost from "../components/SearchPost";
+	import Box from "../components/Box";
 	export default {
 
 		name: "Page6",
@@ -92,6 +96,7 @@
 		},
 
 		components: {
+			Box,
 			SearchPost
 		}
 

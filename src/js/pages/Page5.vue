@@ -6,7 +6,7 @@
 				<div class="col-lg-7 mb-4 mb-lg-0">
 					<div class="position-relative">
 						<img src="img/MacBook.png" alt="" class="w-100" />
-						<img src="img/box-MacBook.png" alt="" class="box-macbook animated pulse infinite slow" />
+						<Box :id="4" :blur="2" />
 					</div>
 				</div>
 				<div class="col-lg">
@@ -46,9 +46,11 @@
 
 <script>
 	import ChromeExtButton from "../components/ChromeExtButton";
+	import Box from "../components/Box";
 	export default {
 		name: "Page5",
 		components: {
+			Box,
 			ChromeExtButton
 		}
 	}
