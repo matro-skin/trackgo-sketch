@@ -43,6 +43,16 @@
 			color: $primary;
 		}
 	}
+	@include media-breakpoint-down(md) {
+		.custom-control {
+			margin-right: -0.5rem;
+		}
+		.btn-lg {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+	}
+
 }
 
 .edit-post-dropdown {
