@@ -1,6 +1,5 @@
 <template>
 	<div>
-
 		<section id="my-posts" class="bg-light-gray pt-4 pt-lg-5">
 			<div class="container">
 
