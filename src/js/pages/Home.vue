@@ -2,47 +2,22 @@
 	<div>
 
 		<section role="banner" id="section-home-search" class="bg-light-gray text-center">
-
 			<div class="container">
 
 				<div class="row">
 					<div class="col-lg-9 mx-auto">
-
 						<h1 class="text-xxxl font-weight-bold">Отслеживание посылок</h1>
-
 						<div class="text-gray text-lg mb-5">
 							Из <strong>AliExpress</strong>, <strong>Ebay.com</strong>, <strong>TaoBao</strong>,
 							JD.com Joom, Wish - Почты России, Украины, Беларусии, Казахстана, Китая, AliExpress JD.com,
 							Joom, Pandao, GearBest, Ebay.com, TaoBao быстро, легко и удобно
 						</div>
-
-						<div class="card">
-							<div class="card-body">
-								<form>
-									<div class="row align-items-center">
-										<div class="col-auto text-gray">
-											<div class="pl-4">
-												<i class="fas fa-barcode fa-2x"></i>
-											</div>
-										</div>
-										<div class="col pl-0">
-											<label for="home-search" class="sr-only">Отследить посылку</label>
-											<input type="search" id="home-search" name="search" class="form-control form-control-lg"
-											       placeholder="Введите трек-код, например: RF727913178SG" />
-										</div>
-										<div class="col-lg-auto submit-container">
-											<button type="submit" class="btn btn-primary btn-lg">Отследить посылку</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-
 					</div>
 				</div>
 
-			</div>
+				<SearchPost />
 
+			</div>
 		</section>
 
 		<div class="section-hr">
@@ -344,11 +319,13 @@
 	import SocialButtons from "../components/SocialButtons";
 	import FaqItem from "../components/FaqItem";
 	import PostInfo from "../components/PostInfo";
+	import SearchPost from "../components/SearchPost";
 	export default {
 
 		name: "Home",
 
 		components: {
+			SearchPost,
 			PostInfo,
 			FaqItem,
 			SocialButtons

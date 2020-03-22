@@ -1,9 +1,13 @@
 #section-home-search {
     @include media-breakpoint-down(md) {
-        padding-bottom: 10.5rem;
+        padding-bottom: 4.5rem;
     }
-    .card {
-        box-shadow: $box-shadow-lg;
+}
+
+.search-card {
+    box-shadow: $box-shadow-lg;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 6rem;
     }
     .card-body {
         padding: 0.5rem;

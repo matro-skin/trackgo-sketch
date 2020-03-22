@@ -27,19 +27,19 @@ $light: $gray-250;
 
 $theme-colors: ();
 $theme-colors: map-merge(
-    (
-        "gray": $gray-600,
-        "light-gray": $gray-100
-        //"primary":    $primary,
-        //"secondary":  $secondary,
-        //"success":    $success,
-        //"info":       $info,
-        //"warning":    $warning,
-        //"danger":     $danger,
-        //"light":      $light,
-        //"dark":       $dark
-    ),
-    $theme-colors
+				(
+						"gray": $gray-600,
+						"light-gray": $gray-100
+					//"primary":    $primary,
+					//"secondary":  $secondary,
+					//"success":    $success,
+					//"info":       $info,
+					//"warning":    $warning,
+					//"danger":     $danger,
+					//"light":      $light,
+					//"dark":       $dark
+				),
+				$theme-colors
 );
 
 $border-radius: 6px;
@@ -57,6 +57,9 @@ $input-padding-y-sm: 0.7rem;
 $input-font-size-sm: $font-size-base;
 $input-bg: $gray-100;
 $input-disabled-bg: $gray-100;
+
+$input-border-color: $gray-150;
+$input-group-addon-border-color: $gray-150;
 
 $btn-border-radius: $border-radius;
 $btn-border-radius-sm: $border-radius-sm;
@@ -92,18 +95,18 @@ $jumbotron-bg: $gray-100;
 $jumbotron-padding: $font-size-base*2;
 
 $grid-breakpoints: (
-    xs: 0,
-    sm: 440px,
-    md: 576px,
-    lg: 992px,
-    xl: 1340px
+		xs: 0,
+		sm: 440px,
+		md: 576px,
+		lg: 992px,
+		xl: 1340px
 );
 
 $container-max-widths: (
-    sm: 400px,
-    md: 540px,
-    lg: 960px,
-    xl: 1280px
+		sm: 400px,
+		md: 540px,
+		lg: 960px,
+		xl: 1280px
 );
 
 $grid-gutter-width: $font-size-base*1.5;

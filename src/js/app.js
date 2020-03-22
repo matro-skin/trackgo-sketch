@@ -6,7 +6,7 @@
 // }
 
 let pages = [];
-for(let i = 2; i <= 5; i++) {
+for(let i = 2; i <= 7; i++) {
 	pages.push({
 		path: '/' + i,
 		name: i,

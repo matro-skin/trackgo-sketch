@@ -134,3 +134,17 @@ footer {
     left: -12%;
     bottom: 2%;
 }
+
+.service {
+    img {
+        width: 5rem;
+        border-radius: $border-radius;
+        @include media-breakpoint-down(md) {
+            border-right: $border-radius-sm;
+        }
+    }
+}
+
+.search-service-input {
+
+}
