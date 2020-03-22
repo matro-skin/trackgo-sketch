@@ -1,9 +1,9 @@
-// try {
-// 	require('bootstrap');
-// }
-// catch (e) {
-// 	console.error(e)
-// }
+try {
+	require('bootstrap');
+}
+catch (e) {
+	console.error(e)
+}
 
 let pages = [];
 for(let i = 2; i <= 7; i++) {
@@ -38,21 +38,3 @@ new Vue({
 	router
 }).$mount('#app');
 
-// let specifiedElements = document.getElementsByClassName('dropdown');
-// console.log('specifiedElements', specifiedElements);
-//
-// for(let el of specifiedElements) {
-// 	document.addEventListener('click', function(event) {
-// 		var isClickInside = el.contains(event.target);
-// 		if (!isClickInside) {
-// 			Vue.prototype.$root.$emit('dropdown',false);
-// 			//the click was outside the specifiedElement, do something
-// 		}
-// 	});
-// }
-
-// var bsn = require("bootstrap.native");
-// let myDropdown = document.getElementById('navbarDropdown');
-// console.log('myDropdown', myDropdown);
-// var myDropdownInit = new Dropdown( myDropdown );
-// console.log(myDropdownInit);

@@ -16,7 +16,9 @@
 								       placeholder="Введите трек-код, например: RF727913178SG" />
 							</div>
 							<div class="col-lg-auto submit-container">
-								<button type="submit" class="btn btn-primary btn-lg">Отследить посылку</button>
+								<transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" appear>
+									<button type="submit" class="btn btn-primary btn-lg">Отследить посылку</button>
+								</transition>
 							</div>
 						</div>
 					</form>
