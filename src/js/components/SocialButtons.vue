@@ -1,22 +1,32 @@
 <template>
-	<ul class="list-inline mt-1 mb-4">
+	<ul class="list-inline mt-1 mb-4 social-buttons">
 		<li class="list-inline-item">
-			<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/vk.svg#vk"></use></svg></a>
+			<a href="#"><SvgVk /></a>
 		</li>
 		<li class="list-inline-item">
-			<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/twitter.svg#twitter"></use></svg></a>
+			<a href="#"><SvgTwitter /></a>
 		</li>
 		<li class="list-inline-item">
-			<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/linkedin.svg#linkedin"></use></svg></a>
+			<a href="#"><SvgLinkedIn /></a>
 		</li>
 		<li class="list-inline-item">
-			<a href="#"><svg class="icon-lg text-gray"><use xlink:href="svg/facebook.svg#facebook"></use></svg></a>
+			<a href="#"><SvgFacebook /></a>
 		</li>
 	</ul>
 </template>
 
 <script>
+	import SvgVk from "../../svg/vk.svg"
+	import SvgTwitter from "../../svg/twitter.svg"
+	import SvgLinkedIn from "../../svg/linkedin.svg"
+	import SvgFacebook from "../../svg/facebook.svg"
 	export default {
-		name: "SocialButtons"
+		name: "SocialButtons",
+		components: {
+			SvgVk,
+			SvgTwitter,
+			SvgLinkedIn,
+			SvgFacebook
+		}
 	}
 </script>

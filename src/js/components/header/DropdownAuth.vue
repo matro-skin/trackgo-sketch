@@ -1,22 +1,22 @@
 <template>
 	<div>
 
-		<div v-show="$route.name % 2 === 0" class="pl-5">
+		<div v-if="$route.name % 2 === 0" class="pl-5">
 			<span class="avatar mr-2">
 				<img src="img/avatar.png" alt="" />
 				<span>2</span>
 			</span>
 			<a href="#" class="btn btn-link text-gray text-xl btn-sm px-1">
-				<i class="fas fa-sign-out-alt"></i>
+				<SvgSignOut class="sign-out"/>
 			</a>
 		</div>
 
-		<div v-show="$route.name % 2 !== 0" class="dropdown">
+		<div v-else class="dropdown">
 
 			<a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownLoginButton"
 			   data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-				<svg class="icon" viewBox="0 0 18 18" preserveAspectRatio="none"><use xlink:href="svg/sign-in.svg#sign-in"></use></svg>
-				Войти
+				<SvgSignIn class="icon" />
+				<span>Войти</span>
 			</a>
 
 			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLoginButton">
@@ -53,11 +53,15 @@
 </template>
 
 <script>
-	import SocialButtons from "../SocialButtons";
+	import SocialButtons from "../SocialButtons"
+	import SvgSignIn from "../../../svg/sign-in.svg"
+	import SvgSignOut from "../../../svg/sign-out.svg"
 	export default {
 		name: "DropdownAuth",
 		components: {
-			SocialButtons
+			SocialButtons,
+			SvgSignIn,
+			SvgSignOut
 		},
 		data() {
 			return {

@@ -27,7 +27,11 @@
 					<div class="col py-2">
 						<div class="label font-weight-bold text-lg">Покинуло сортировочный центр</div>
 						<div class="text-gray">
-							<a href="#" class="text-clear show-map mr-2" @click.prevent="expandMap = !expandMap">Посмотреть на карте <i class="fas fa-angle-down ease"></i></a>
+							<a href="#" class="text-clear show-map mr-2"
+							   @click.prevent="expandMap = !expandMap">
+								Посмотреть на карте
+								<SvgAngle class="angle-down" />
+							</a>
 							<span class="delivery-type">Международная обработка</span>
 						</div>
 					</div>
@@ -47,16 +51,17 @@
 </template>
 
 <script>
+	import SvgAngle from "../../svg/angle.svg"
 	export default {
 		name: "PostInfoLogItem",
-
 		data() {
 			return {
 				expandMap: false
 			}
 		},
-
-		props: [ 'active' ]
-
+		props: [ 'active' ],
+		components: {
+			SvgAngle
+		}
 	}
 </script>

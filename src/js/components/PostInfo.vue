@@ -4,7 +4,7 @@
 		<div class="row align-items-center">
 			<div class="col col-lg-auto pr-0">
 				<a href="#" class="btn btn-link btn-sm text-sm text-gray">
-					<i class="fas fa-redo"></i>
+					<SvgRefresh class="refresh" />
 					<span class="pl-1">Обновить</span>
 				</a>
 			</div>
@@ -43,7 +43,7 @@
 						<div class="row align-items-center">
 							<div class="col-auto py-3">
 								<div class="text-gray">
-									<i class="fas fa-barcode fa-2x"></i>
+									<SvgBarCode class="barcode" />
 								</div>
 							</div>
 							<div class="col delivery-meta-code pl-0 py-3">
@@ -109,7 +109,7 @@
 							<input type="text" class="form-control" id="track-link" value="https://trackgo.ru/?1234567890" readonly />
 							<div class="input-group-append">
 								<button class="btn btn-light" type="button">
-									<i class="fas fa-link"></i>
+									<SvgLink class="icon mr-0" />
 								</button>
 							</div>
 						</div>
@@ -126,17 +126,23 @@
 </template>
 
 <script>
-	import PostInfoLogItem from "./PostInfoLogItem";
-	import PostInfoCards from "./PostInfoCards";
-	import SocialButtons from "./SocialButtons";
-	import LangSwitch from "./header/LangSwitch";
+	import PostInfoLogItem from "./PostInfoLogItem"
+	import PostInfoCards from "./PostInfoCards"
+	import SocialButtons from "./SocialButtons"
+	import LangSwitch from "./header/LangSwitch"
+	import SvgRefresh from "../../svg/refresh.svg"
+	import SvgLink from "../../svg/broken-link.svg"
+	import SvgBarCode from "../../svg/iconscan.svg"
 	export default {
 		name: "PostInfo",
 		components: {
 			LangSwitch,
 			SocialButtons,
 			PostInfoCards,
-			PostInfoLogItem
+			PostInfoLogItem,
+			SvgRefresh,
+			SvgLink,
+			SvgBarCode
 		}
 	}
 </script>

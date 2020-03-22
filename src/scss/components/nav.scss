@@ -40,7 +40,6 @@
         }
 	}
 	.dropdown-toggle {
-		color: $gray-600;
 		&:after {
 			display: none;
 		}
@@ -74,7 +73,6 @@
 [aria-labelledby="dropdownLoginButton"] {
     margin-top: $font-size-base;
     @include media-breakpoint-down(md) {
-        //margin-top: 11px;
         position: fixed;
         left: 0;
         top: 50px;
@@ -103,10 +101,6 @@
 
 .drawer-toggle {
 	margin-right: 1.25rem;
-    svg {
-        width: 23px;
-        height: 19px;
-    }
 }
 
 @include media-breakpoint-down(md) {

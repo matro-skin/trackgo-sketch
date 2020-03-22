@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 17 17" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="icon/edit">
+    <g id="edit">
+      <path d="M0 10.4503L0 13.992L3.54167 13.992L13.9919 3.54167L10.4503 0L0 10.4503Z" transform="translate(-2.096101E-13 3.00568)" id="Path" fill="#727292" stroke="none" />
+      <path d="M5.27004 2.48151L3.06474 0.27625C2.6964 -0.0920833 2.09667 -0.0920833 1.72833 0.27625L0 2.00458L3.54167 5.54625L5.27 3.81792C5.63838 3.44958 5.63838 2.84985 5.27004 2.48151Z" transform="translate(11.45136 -6.661338E-15)" id="Path" fill="#727292" stroke="none" />
+    </g>
+  </g>
+</svg>

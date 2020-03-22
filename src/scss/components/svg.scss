@@ -1,0 +1,67 @@
+svg {
+	&.sign-in,
+	&.sign-out {
+		width: 18px;
+		height: 18px;
+	}
+	&.drawer-toggle {
+		width: 23px;
+		height: 19px;
+	}
+	&.refresh {
+		width: 25px;
+	}
+	&.angle-down {
+		width: 6px;
+	}
+	&.barcode {
+		width: 30px;
+	}
+	&.barcode-xs {
+		height: 11px;
+		position: relative;
+		top: -3px;
+	}
+	&.icon-edit {
+		width: 17px;
+	}
+	&.icon-delete {
+		width: 15px;
+	}
+	&.caret {
+		width: 10px;
+		fill: $gray-300;
+	}
+	&.arrow {
+		width: 18px;
+		opacity: 0.75;
+	}
+}
+
+.section-hr .btn {
+	&:hover {
+		svg {
+			opacity: 1;
+		}
+	}
+}
+.map-opened {
+	svg.angle-down {
+		transform: rotate(180deg);
+	}
+}
+.my-post-card.active {
+	svg.caret {
+		fill: $indigo
+	}
+}
+
+.social-buttons {
+	svg {
+		width: 25px;
+		fill: $gray-600;
+		&:hover {
+			fill: $indigo;
+		}
+	}
+}

@@ -7,7 +7,7 @@
 						<div class="row align-items-center">
 							<div class="col-auto text-gray">
 								<div class="pl-4">
-									<i class="fas fa-barcode fa-2x"></i>
+									<SvgBarCode class="barcode" />
 								</div>
 							</div>
 							<div class="col pl-0">
@@ -29,7 +29,11 @@
 </template>
 
 <script>
+	import SvgBarCode from "../../svg/iconscan.svg"
 	export default {
-		name: "SearchPost"
+		name: "SearchPost",
+		components: {
+			SvgBarCode
+		}
 	}
 </script>

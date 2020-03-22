@@ -26,11 +26,17 @@ svg {
         @include media-breakpoint-down(md) {
             width: 13px;
             height: 13px;
+            position: relative;
+            top: -2px;
         }
 	}
     &.icon-lg {
         width: 25px;
         height: 25px;
+        @include media-breakpoint-down(md) {
+            width: 18px;
+            height: 18px;
+        }
     }
 }
 

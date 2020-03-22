@@ -9,7 +9,8 @@
 						чтобы сохранять и отслеживать все ваши посылки
 					</div>
 					<a href="#" class="btn btn-sm btn-outline-primary">
-						Войти
+						<SvgSignIn class="icon" />
+						<span>Войти</span>
 					</a>
 				</div>
 			</div>
@@ -23,7 +24,8 @@
 						в мессенджерах, используйте нашего телеграм бота
 					</div>
 					<a href="#" class="btn btn-sm btn-outline-secondary font-weight-normal">
-						@TrackGoBot
+						<SvgTelegramIcon class="icon-lg" />
+						<span>@TrackGoBot</span>
 					</a>
 				</div>
 			</div>
@@ -36,9 +38,7 @@
 						Если вы часто просматривайте посылки с телефона,
 						установите удобнее приложение
 					</div>
-					<a href="#" class="google-play-badge btn btn-outline-light bg-white p-0 border-0">
-						<svg><use xlink:href="svg/google-play-badge-light.svg#google-play-badge-light"></use></svg>
-					</a>
+					<GooglePlayButton />
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,15 @@
 </template>
 
 <script>
+	import SvgSignIn from "../../svg/sign-in.svg"
+	import SvgTelegramIcon from "../../svg/icontelegram.svg"
+	import GooglePlayButton from "./header/GooglePlayButton";
 	export default {
-		name: "PostInfoCards"
+		name: "PostInfoCards",
+		components: {
+			GooglePlayButton,
+			SvgSignIn,
+			SvgTelegramIcon
+		}
 	}
 </script>

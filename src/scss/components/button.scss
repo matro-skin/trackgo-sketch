@@ -44,10 +44,16 @@
 
 .btn-light {
 	color: $gray-600 !important;
+	svg {
+		fill: $gray-600;
+	}
 	&:hover {
 		background-color: $indigo !important;
 		border-color: $indigo !important;
 		color: $white !important;
+		svg {
+			fill: $white;
+		}
 	}
 }
 

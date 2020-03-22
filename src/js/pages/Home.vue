@@ -29,7 +29,7 @@
 
 		<div class="section-hr">
 			<button type="button" class="btn btn-outline-light bg-white rounded-circle position-absolute">
-				<i class="fas fa-angle-down"></i>
+				<SvgArrow class="arrow" />
 			</button>
 		</div>
 
@@ -302,12 +302,13 @@
 </template>
 
 <script>
-	import SocialButtons from "../components/SocialButtons";
-	import FaqItem from "../components/FaqItem";
-	import PostInfo from "../components/PostInfo";
-	import SearchPost from "../components/SearchPost";
-	import AppWidget from "../components/AppWidget";
-	import Box from "../components/Box";
+	import SocialButtons from "../components/SocialButtons"
+	import FaqItem from "../components/FaqItem"
+	import PostInfo from "../components/PostInfo"
+	import SearchPost from "../components/SearchPost"
+	import AppWidget from "../components/AppWidget"
+	import Box from "../components/Box"
+	import SvgArrow from "../../svg/angle.svg"
 	export default {
 
 		name: "Home",
@@ -318,7 +319,8 @@
 			SearchPost,
 			PostInfo,
 			FaqItem,
-			SocialButtons
+			SocialButtons,
+			SvgArrow
 		}
 
 	}

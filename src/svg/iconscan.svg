@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 40 29" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="icon/scan">
+    <g id="scan">
+      <path d="M0 0L7.91742 0L7.91742 27.9535L0 27.9535L0 0Z" transform="translate(0 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+      <path d="M0 0L7.91742 0L7.91742 27.9535L0 27.9535L0 0Z" transform="translate(13.89477 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+      <path d="M0 0L7.91742 0L7.91742 27.9535L0 27.9535L0 0Z" transform="translate(32.08258 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+      <path d="M0 0L2.60867 0L2.60867 27.9535L0 27.9535L0 0Z" transform="translate(9.601719 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+      <path d="M0 0L2.60867 0L2.60867 27.9535L0 27.9535L0 0Z" transform="translate(23.49649 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+      <path d="M0 0L2.60867 0L2.60867 27.9535L0 27.9535L0 0Z" transform="translate(27.78953 0.003166726)" id="Rectangle" fill="#BBBBCB" stroke="none" />
+    </g>
+  </g>
+</svg>

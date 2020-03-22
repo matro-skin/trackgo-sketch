@@ -53,8 +53,8 @@
 
 				<div class="mt-auto p-4 d-lg-none">
 					<a href="#" class="text-gray font-weight-bolder">
-						<svg class="icon" viewBox="0 0 18 18" preserveAspectRatio="none"><use xlink:href="svg/sign-in.svg#sign-in"></use></svg>
-						Выйти
+						<SvgSignOut class="icon" />
+						<span class="ml-1">Выйти</span>
 					</a>
 				</div>
 
@@ -68,13 +68,16 @@
 	import GooglePlayButton from "./GooglePlayButton";
 	import LangSwitch from "./LangSwitch";
 	import DropdownMenu from "./DropdownMenu";
+	import SvgSignOut from "../../../svg/sign-out.svg"
 	export default {
 
 		name: "Drawer",
 
 		components: {
 			DropdownMenu,
-			LangSwitch, GooglePlayButton
+			LangSwitch,
+			GooglePlayButton,
+			SvgSignOut
 		}
 
 	}

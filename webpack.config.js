@@ -108,7 +108,14 @@ const config = {
 			{
 				test: /\.vue$/,
 				loader: 'vue-loader'
-			}
+			},
+			{
+				test: /\.svg$/,
+				use: [
+					'babel-loader',
+					'vue-svg-loader',
+				],
+			},
 		]
 	},
 	resolve: {

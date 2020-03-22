@@ -16,14 +16,14 @@
 			все сведения о посылке на одной странице,
 			для любопытных - можно отследить все манипуляции с посылкой».
 		</div>
-		<a href="#" class="google-play-badge btn btn-outline-light bg-white p-0 border-0 box-shadow-sm">
-			<svg><use xlink:href="svg/google-play-badge-light.svg#google-play-badge-light"></use></svg>
-		</a>
+		<GooglePlayButton />
 	</div>
 </template>
 
 <script>
+	import GooglePlayButton from "./header/GooglePlayButton";
 	export default {
-		name: "AppWidget"
+		name: "AppWidget",
+		components: {GooglePlayButton}
 	}
 </script>

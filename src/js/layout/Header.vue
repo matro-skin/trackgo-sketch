@@ -22,7 +22,7 @@
 					<div class="col-auto px-0 d-lg-none">
 						<button type="button" class="btn btn-link drawer-toggle px-0"
 						        @click="$root.$emit('drawer', true)">
-							<svg><use xlink:href="svg/menu.svg#menu"></use></svg>
+							<SvgDrawerToggle />
 						</button>
 					</div>
 
@@ -37,6 +37,7 @@
 	import Drawer from "../components/header/Drawer";
 	import SocialButtons from "../components/SocialButtons";
 	import DropdownAuth from "../components/header/DropdownAuth";
+	import SvgDrawerToggle from "../../svg/menu.svg"
 	export default {
 
 		name: "Header",
@@ -44,7 +45,8 @@
 		components: {
 			DropdownAuth,
 			SocialButtons,
-			Drawer
+			Drawer,
+			SvgDrawerToggle
 		}
 
 	}

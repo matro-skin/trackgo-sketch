@@ -10,7 +10,7 @@
 					</div>
 					<div class="col-8 col-lg-2 order-lg-2">
 						<div class="post-code text-gray">
-							<i class="fas fa-barcode"></i>
+							<SvgBarCode class="barcode-xs" />
 							<span>RA250251554FI</span>
 						</div>
 						<div class="post-vendor text-gray">
@@ -38,7 +38,9 @@
 							<div class="col">
 								<a href="#" class="text-sm" @click.prevent="isActive = !isActive">
 									<span class="d-lg-none">Посмотреть детали</span>
-									<span class="expand ease"><i class="fas fa-angle-down"></i></span>
+									<span class="expand ease">
+										<SvgCaret class="caret" />
+									</span>
 								</a>
 							</div>
 							<div class="col-auto">
@@ -47,7 +49,7 @@
 										<div class="dropdown">
 											<button type="button" class="btn btn-link text-gray px-1"
 											        data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-												<i class="fas fa-pen"></i>
+												<SvgEdit class="icon-edit" />
 											</button>
 											<div class="dropdown-menu dropdown-menu-right edit-post-dropdown py-0">
 												<form class="p-3">
@@ -61,7 +63,7 @@
 									</li>
 									<li class="list-inline-item">
 										<button type="button" class="btn btn-link text-gray px-1">
-											<i class="far fa-trash-alt"></i>
+											<SvgDelete class="icon-delete" />
 										</button>
 									</li>
 								</ul>
@@ -79,10 +81,18 @@
 
 <script>
 	import PostInfo from "./PostInfo"
+	import SvgBarCode from "../../svg/iconscan.svg"
+	import SvgEdit from "../../svg/iconedit.svg"
+	import SvgDelete from "../../svg/icontrash.svg"
+	import SvgCaret from "../../svg/caret.svg"
 	export default {
 		name: "MyPostItem",
 		components: {
-			PostInfo
+			PostInfo,
+			SvgBarCode,
+			SvgEdit,
+			SvgDelete,
+			SvgCaret
 		},
 		data() {
 			return {
