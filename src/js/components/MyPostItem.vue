@@ -92,7 +92,3 @@
 		props: [ 'active' ]
 	}
 </script>
-
-<style scoped>
-
-</style>

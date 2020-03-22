@@ -12,7 +12,3 @@
 		name: "LangSwitch"
 	}
 </script>
-
-<style scoped>
-
-</style>

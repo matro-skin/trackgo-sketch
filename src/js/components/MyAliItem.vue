@@ -43,7 +43,3 @@
 		props: [ 'selected', 'id' ]
 	}
 </script>
-
-<style scoped>
-
-</style>

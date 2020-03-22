@@ -9,7 +9,3 @@
 		name: "GooglePlayButton"
 	}
 </script>
-
-<style scoped>
-
-</style>

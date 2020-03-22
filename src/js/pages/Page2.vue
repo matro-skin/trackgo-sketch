@@ -27,7 +27,3 @@
 		components: {MyNav, MyPostItem}
 	}
 </script>
-
-<style scoped>
-
-</style>

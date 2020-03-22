@@ -33,7 +33,3 @@
 		name: "SearchPost"
 	}
 </script>
-
-<style scoped>
-
-</style>

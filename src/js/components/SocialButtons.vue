@@ -20,7 +20,3 @@
 		name: "SocialButtons"
 	}
 </script>
-
-<style scoped>
-
-</style>

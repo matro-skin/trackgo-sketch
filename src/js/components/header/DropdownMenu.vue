@@ -18,7 +18,3 @@
 		name: "DropdownMenu"
 	}
 </script>
-
-<style scoped>
-
-</style>

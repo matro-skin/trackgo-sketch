@@ -52,7 +52,3 @@
 		name: "PostInfoCards"
 	}
 </script>
-
-<style scoped>
-
-</style>
