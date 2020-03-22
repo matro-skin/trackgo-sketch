@@ -29,6 +29,6 @@
 - [x] Footer
 
 #### Extra
-- [ ] svg
+- [x] svg
 - [x] boxes
-- [ ] animations
+- [x] animations
