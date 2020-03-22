@@ -8,10 +8,7 @@
 				<h1 class="text-xxl font-weight-bold">Установите расшрение <br />
 					и импортируйте товары из AliExpress</h1>
 
-				<button type="button" class="btn btn-lg btn-primary btn-chrome my-4">
-					Установить для Google Chrome
-					<span><img src="img/chrome.png" alt="Установите расшрение и импортируйте товары из AliExpress" /></span>
-				</button>
+				<ChromeExtButton class="my-4" />
 
 				<div class="text-gray">
 					Мы бережно импортируем все Ваши посылки в личный кабинет и будем <br />
@@ -25,9 +22,11 @@
 
 <script>
 	import MyNav from "../components/MyNav";
+	import ChromeExtButton from "../components/ChromeExtButton";
 	export default {
 		name: "Page4",
 		components: {
+			ChromeExtButton,
 			MyNav
 		}
 	}

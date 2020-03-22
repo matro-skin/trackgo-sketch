@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-lg-4 mb-4 mb-md-0">
 					<img src="img/logo.png" class="logo" alt="TrackGo" />
-					<div class="text-sm text-gray mt-4">
+					<div class="text-sm text-gray mt-4 mr-lg-4 mr-xl-5">
 						<div class="mb-3">Trackgo.ru - отслеживание отправлений по всему миру</div>
 						<div>
 							Сервис Trackgo.ru уже полноценно отслеживает регистрируемые почтовые отправления
