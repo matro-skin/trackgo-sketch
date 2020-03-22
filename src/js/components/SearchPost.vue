@@ -1,6 +1,6 @@
 <template>
 	<div class="row">
-		<div class="col-lg-9 mx-auto text-center">
+		<div class="col-lg-9 col-xl-8 mx-auto text-center">
 			<div class="card search-card">
 				<div class="card-body">
 					<form>

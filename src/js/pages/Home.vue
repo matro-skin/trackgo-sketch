@@ -2,10 +2,10 @@
 	<div>
 
 		<section role="banner" id="section-home-search" class="bg-light-gray text-center">
-			<div class="container">
+			<div class="container position-relative">
 
 				<div class="row">
-					<div class="col-lg-9 mx-auto">
+					<div class="col-lg-9 col-xl-8 mx-auto">
 						<h1 class="text-xxxl font-weight-bold">Отслеживание посылок</h1>
 						<div class="text-gray text-lg mb-5">
 							Из <strong>AliExpress</strong>, <strong>Ebay.com</strong>, <strong>TaoBao</strong>,
@@ -16,6 +16,9 @@
 				</div>
 
 				<SearchPost />
+
+				<Box :id="1" :blur="2" />
+				<Box :id="2" :blur="5" />
 
 			</div>
 		</section>
@@ -191,7 +194,6 @@
 
 					<div class="col-lg-7 col-xl-8">
 
-
 						<div class="text-xxl font-weight-bold text-gray mb-3 d-lg-none">
 							Часто задаваемые вопросы
 						</div>
@@ -301,11 +303,13 @@
 	import PostInfo from "../components/PostInfo";
 	import SearchPost from "../components/SearchPost";
 	import AppWidget from "../components/AppWidget";
+	import Box from "../components/Box";
 	export default {
 
 		name: "Home",
 
 		components: {
+			Box,
 			AppWidget,
 			SearchPost,
 			PostInfo,

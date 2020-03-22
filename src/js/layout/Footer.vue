@@ -1,6 +1,6 @@
 <template>
 	<footer id="footer" class="bg-light-gray">
-		<div class="container">
+		<div class="container position-relative">
 			<div class="row">
 				<div class="col-lg-4 mb-4 mb-md-0">
 					<img src="img/logo.png" class="logo" alt="TrackGo" />
@@ -36,24 +36,22 @@
 					</a>
 				</div>
 			</div>
-			<div class="box animated pulse infinite slow"></div>
+			<Box :id="3" :blur="3" />
 		</div>
 	</footer>
 </template>
 
 <script>
 	import SocialButtons from "../components/SocialButtons";
+	import Box from "../components/Box";
 	export default {
 
 		name: "Footer",
 
 		components: {
+			Box,
 			SocialButtons
 		}
 
 	}
 </script>
-
-<style scoped>
-
-</style>
