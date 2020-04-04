@@ -44,24 +44,30 @@
 			</div>
 		</div>
 		<div class="delivery-map box-shadow-md ease">
-			<iframe v-if="expandMap" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a269e577e3556bc1efae57decf54d56e629352e49f375d567bd4f5ffebd0b5b&amp;source=constructor" width="100%" height="150" frameborder="0"></iframe>
+			<yandexMap v-if="expandMap" :zoom="zoom" :coords="coords" :cluster-options="options" />
 		</div>
 	</div>
 
 </template>
 
 <script>
-	import SvgAngle from "../../svg/angle.svg"
+	import { yandexMap } from 'vue-yandex-maps'
+	import SvgAngle from '../../svg/angle.svg'
+
 	export default {
-		name: "PostInfoLogItem",
-		data() {
+		name: 'PostInfoLogItem',
+		data () {
 			return {
-				expandMap: false
+				expandMap: false,
+				zoom: 10,
+				coords: [0, 0],
+				options: { 1: { clusterDisableClickZoom: true, layout: '<div></div>' } },
 			}
 		},
-		props: [ 'active' ],
+		props: ['active'],
 		components: {
-			SvgAngle
-		}
+			yandexMap,
+			SvgAngle,
+		},
 	}
 </script>

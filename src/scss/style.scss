@@ -69,7 +69,7 @@ svg.text-gray,
     }
 }
 
-section {
+section[role="banner"] {
     padding-top: 4.5rem;
     padding-bottom: 7.5rem;
     @include media-breakpoint-down(md) {
@@ -158,4 +158,8 @@ footer {
         width: 50px;
         fill: $gray-600;
     }
+}
+
+.ymap-container {
+    height: 100%;
 }
