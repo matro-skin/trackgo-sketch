@@ -30,6 +30,7 @@ $custom-switch-border-width: 2px;
 		}
 	}
 	.custom-control-label {
+		cursor: pointer;
 		display: flex;
 		min-height: $custom-switch-height;
 		align-items: center;
