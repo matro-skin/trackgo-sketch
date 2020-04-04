@@ -152,3 +152,10 @@ footer {
         }
     }
 }
+
+.post-avatar {
+    svg {
+        width: 50px;
+        fill: $gray-600;
+    }
+}

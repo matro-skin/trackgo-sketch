@@ -5,7 +5,8 @@
 				<div class="row align-items-lg-center">
 					<div class="col-4 col-lg-auto py-lg-2 post-avatar-col order-lg-0">
 						<div class="post-avatar text-center">
-							<img src="img/post-avatar.png" alt="" class=" mx-auto" />
+							<TruckSvg v-if="truck" />
+							<img v-else src="img/post-avatar.png" alt="" class=" mx-auto" />
 						</div>
 					</div>
 					<div class="col-8 col-lg-auto order-lg-2 text-right pr-lg-5">
@@ -33,6 +34,7 @@
 </template>
 
 <script>
+	import TruckSvg from "../../svg/truck.svg"
 	export default {
 		name: "MyAliItem",
 		data() {
@@ -40,6 +42,14 @@
 				isSelected: this.selected
 			}
 		},
-		props: [ 'selected', 'id' ]
+		computed: {
+			truck() {
+				return Math.floor(Math.random() * Math.floor(2))
+			}
+		},
+		props: [ 'selected', 'id' ],
+		components: {
+			TruckSvg
+		}
 	}
 </script>
